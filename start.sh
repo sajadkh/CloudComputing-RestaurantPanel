@@ -4,7 +4,7 @@ echo "start restaurant service...."
 echo "create database..."
 python initializer.py
 echo "django makemigrations..."
-python manage.py makemigrations authCore
+python manage.py makemigrations appPanel
 echo "django migrate..."
 python manage.py migrate
 echo "run server..."
