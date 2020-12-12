@@ -9,7 +9,7 @@ from .serializers import MenuSerializer, RestaurantResponseSerializer, OrderSeri
 
 
 def token_validation(token):
-    r = requests.post("http://localhost:8000/auth/verify", data={}, headers={"token": token})
+    r = requests.post("http://authentication:8000/auth/verify", data={}, headers={"token": token})
     if r.status_code == 200:
         info = r.json()['data']
         return info
